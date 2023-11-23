@@ -29,7 +29,7 @@ public class MsgSystem implements CommandExecutor {
                 Player targetPlayer = Bukkit.getPlayer(args[0]);
 
                 if (targetPlayer == null) {
-                    p.sendMessage(ChatColor.RED + "Player not found");
+                    p.sendMessage(ChatColor.RED + "Player not found, try again later");
                     return true;
                 }
 

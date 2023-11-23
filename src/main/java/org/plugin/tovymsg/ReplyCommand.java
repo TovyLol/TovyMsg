@@ -28,7 +28,7 @@ public class ReplyCommand implements CommandExecutor {
             Map<UUID, UUID> lastMessageSenderMap = plugin.getLastMessageSenderMap();
 
             if (!lastMessageSenderMap.containsKey(senderUUID)) {
-                p.sendMessage(ChatColor.RED + "No recent messages to reply to.");
+                p.sendMessage(ChatColor.RED + "You have no one to reply to");
                 return true;
             }
 
@@ -36,8 +36,8 @@ public class ReplyCommand implements CommandExecutor {
             Player lastSender = Bukkit.getPlayer(lastSenderUUID);
 
             if (lastSender == null) {
-                p.sendMessage(ChatColor.RED + "The player you are replying to is no longer online.");
-                lastMessageSenderMap.remove(senderUUID); // Remove outdated entry
+                p.sendMessage(ChatColor.RED + "The player your trying to reach isnt online");
+                lastMessageSenderMap.remove(senderUUID);
                 return true;
             }
 

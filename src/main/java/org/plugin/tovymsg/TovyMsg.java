@@ -7,7 +7,7 @@ public final class TovyMsg extends JavaPlugin {
     @Override
     public void onEnable() {
         MsgSystem msgSystem = new MsgSystem();
-        System.out.println("MsgSystem started up!");
+        System.out.println("MsgSystem started up succesfully");
         getCommand("reply").setExecutor(msgSystem.getReplyCommand());
         getCommand("message").setExecutor(this);
 
