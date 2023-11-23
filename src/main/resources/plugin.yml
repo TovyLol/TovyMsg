@@ -1,0 +1,4 @@
+name: TovyMsg
+version: '${project.version}'
+main: org.school.tovymsg.TovyMsg
+api-version: '1.18'
